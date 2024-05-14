@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+<style>
+	form {
+    background: #FFFFFF;
+    text-align: left;
+    height: 35px;
+    width: 250px;
+	margin: 0 auto; /* 将左右边距设置为 auto，实现水平居中 */
+}
+	input[type=button]{
+        width: 250px;height: 30px;
+	 border: 2px solid transparent;
+    outline: none;
+    border-radius: 5px; /* 设置圆角 */
+		  }
+	input[type=text]{
+        width: 220px;height: 30px;
+	 border: 2px solid transparent;
+    outline: none;
+    border-radius: 5px; /* 设置圆角 */
+		  }
+	input:hover {
+    border-color: #9089F0; /* 当鼠标悬停在 input 上时，显示 1px  */
+                }
+	input:focus {
+    border-color: #9089F0; /* 当输入框获取焦点时，显示边框颜色为蓝色 */
+}
+</style>
+<meta charset="utf-8">
+<title>无标题文档</title>
+
+<style type="text/css">
+
+</style>
+<link href="{% static 'css/line.css' %}" rel="stylesheet" type="text/css">
+</head>
+
+<body bgcolor="#F7F7F7">
+<table width="100%" border="0" style="">
+  <tbody>
+    <tr>
+      <td style="font-size: 36px; text-align: center;"><p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>知 壹 信 息 工 程</p></td>
+    </tr>
+    <tr>
+      <td style="font-size: 16px; text-align: center;">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="center" style="color: #9089F0; text-align: center;"><strong>账号密码登录</strong>
+      <hr align="center" width="150" size="2" noshade="noshade" style="color: #9089F0"></td>
+    </tr>
+    <tr>
+      <td  height="60" valign="middle" style="text-align: center" ><form method="post" name="form1" id="form1" height="30">
+       		  <img src="{% static 'img/login_name.png' %}" width="15" height="15" alt=""/>
+       		  <input name="textfield" type="text" id="login_username" placeholder="账号" style="text-align: left" size="32" height="21" >
+      	  </form>
+	  </td>
+    </tr>
+    <tr>
+      <td height="57" style="text-align: center"><form id="form2" name="form2" method="post">
+        <img src="{% static 'img/login_password.png' %}" width="15" height="17" alt=""/>
+        <input name="textfield2" type="text" autofocus="autofocus" id="login_password" placeholder="密码" style="text-align: left" size="40" height="21" >
+      </form></td>
+    </tr>
+    <tr>
+      <td height="62" style="text-align: center"><input  type="button" name="button" id="button" value="登录" style="text-align: center; background: #9089F0;" ></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
